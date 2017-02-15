@@ -1,0 +1,28 @@
+{
+  "name": "node_js_chat",
+  "version": "1.0.0",
+  "description": "simple chat app using node.js",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/melvin2016/nodejs_chat.git"
+  },
+  "author": "Melvin george",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/melvin2016/nodejs_chat/issues"
+  },
+  "homepage": "https://github.com/melvin2016/nodejs_chat#readme",
+  "dependencies": {
+    "express": "*",
+    "http": "0.0.0",
+    "mongodb": "^2.2.22",
+    "morgan": "*",
+    "path": "*",
+    "socket.io": "^1.7.2"
+  }
+}
