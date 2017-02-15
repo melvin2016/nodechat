@@ -61,5 +61,5 @@ mongo.connect('mongodb://<dblink>/chat',function(err,db){
 });
  // Use 8080 for local development because you might already have apache running on 80
 http.listen(process.env.PORT, function () {
-  console.log("node server started on port 80 !");
+  console.log("node server started !");
 });
