@@ -16,7 +16,7 @@ app.get('/public/:filename', function (req, res) {
 });
 
 
-mongo.connect('mongodb://melvin2017:MELgeo2016$@ds151289.mlab.com:51289/chat',function(err,db){
+mongo.connect('mongodb://<dblink>/chat',function(err,db){
   if(err) throw err;
 
   client.on('connection',function(socket){
