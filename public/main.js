@@ -24,7 +24,7 @@
   setStatus(" Wait");
 
   try{
-    var socket = io.connect('https://nodejschat2017.herokuapp.com');
+    var socket = io.connect('https://<yourUrl>');
   }catch(e){
     //alert the user of error
 
