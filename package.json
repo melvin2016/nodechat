@@ -20,7 +20,7 @@
   "dependencies": {
     "express": "*",
     "http": "0.0.0",
-    "mongodb": "^2.2.22",
+    "mongodb": "^3.1.13",
     "morgan": "*",
     "path": "*",
     "socket.io": "^1.7.2"
