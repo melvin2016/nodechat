@@ -1,7 +1,7 @@
 {
-  "name": "node_js_chat",
+  "name": "nodechat",
   "version": "1.0.0",
-  "description": "simple chat app using node.js",
+  "description": "Simple chat app using node.js",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
