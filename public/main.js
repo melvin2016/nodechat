@@ -22,9 +22,10 @@
   setStatus(" Wait");
 
   try {
-    var socket = io.connect("https://nodechaatt.herokuapp.com/");
+    const socket = io.connect("https://nodechaatt.herokuapp.com/");
   } catch (e) {
     //alert the user of error
+    console.log(e);
   }
 
   if (socket !== undefined) {
