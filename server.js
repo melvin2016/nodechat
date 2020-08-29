@@ -15,7 +15,7 @@ app.get("/public/:filename", function (req, res) {
 });
 
 mongo.connect(
-  `mongodb+srv://melving:${process.env.mongoPassword}@nodechat.qemw6.mongodb.net/chat?retryWrites=true&w=majority`,
+  `mongodb://melving:${process.env.mongoPassword}@myShard-shard-00-00-lbofd.mongodb.net:27017,myShard-shard-00-01-lbofd.mongodb.net:27017,myShard-shard-00-02-lbofd.mongodb.net:27017/MYDBNAME?ssl=true&replicaSet=myShard-shard-0&authSource=admin`,
   function (err, db) {
     if (err) throw err;
 
