@@ -22,7 +22,7 @@
   setStatus(" Wait");
 
   try {
-    const socket = io.connect("https://nodechaatt.herokuapp.com/");
+    var socket = io.connect("https://nodechaatt.herokuapp.com/");
   } catch (e) {
     //alert the user of error
     console.log(e);
