@@ -1,11 +1,11 @@
-var express = require("express");
-var morgan = require("morgan");
-var path = require("path");
-var mongo = require("mongodb").MongoClient;
-var app = express();
+const express = require("express");
+const morgan = require("morgan");
+const path = require("path");
+const mongo = require("mongodb").MongoClient;
+const app = express();
 app.use(morgan("combined"));
-var http = require("http").Server(app);
-var client = require("socket.io")(http);
+const http = require("http").Server(app);
+const client = require("socket.io")(http);
 
 app.get("/", function (req, res) {
   res.sendFile(path.join(__dirname, "public", "index.html"));
@@ -20,19 +20,23 @@ mongo.connect(
     if (err) throw err;
 
     client.on("connection", function (socket) {
-      var coll = db.collection("messages");
-      var sendStatus = function (s) {
+      const coll = db.collection("messages");
+      const sendStatus = function (s) {
         socket.emit("status", s);
       };
       //emit all messages
-      coll.find().limit(100).sort({ _id: 1 }).toArray(function (err, res) {
-        if (err) throw err;
-        socket.emit("output", res);
-      });
+      coll
+        .find()
+        .limit(100)
+        .sort({ _id: 1 })
+        .toArray(function (err, res) {
+          if (err) throw err;
+          socket.emit("output", res);
+        });
       socket.on("chat", function (data) {
-        var name = data.name;
-        var message = data.message;
-        var nothing = /^\s*$/;
+        const name = data.name;
+        const message = data.message;
+        const nothing = /^\s*$/;
 
         if (nothing.test(name) || nothing.test(message)) {
           sendStatus(" Name And message is required !");
@@ -46,7 +50,7 @@ mongo.connect(
 
       console.log("Someone has connected !");
     });
-  },
+  }
 );
 // Use 8080 for local development because you might already have apache running on 80
 http.listen(process.env.PORT, function () {
