@@ -22,7 +22,7 @@
   setStatus(" Wait");
 
   try {
-    var socket = io.connect("https://https://nodechaatt.herokuapp.com/");
+    var socket = io.connect("https://nodechaatt.herokuapp.com/");
   } catch (e) {
     //alert the user of error
   }
@@ -43,7 +43,7 @@
 
     //listening for status
     socket.on("status", function (data) {
-      setStatus((typeof data === "object") ? data.message : data);
+      setStatus(typeof data === "object" ? data.message : data);
 
       if (data.clear === true) {
         textArea.value = "";

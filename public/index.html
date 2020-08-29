@@ -1,38 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <link rel="stylesheet" href="/public/main.css">
-    <title>Imad Chat App</title>
-  </head>
-  <body>
-     <div class="container-fluid"> <!--Starting Of container-->
-      <h1 class="display-4 lead">Imad Chat App </h1><br> <!--heading-->
-      <div class="col-lg-6"> <!--Starting of name input-->
-          <div class="input-group">
-            <input type="text" class="form-control chat-name" placeholder="Enter your Name..">
-          </div>
-      </div><br>  <!--end of name input-->
-      <div class="chat-messages"> <!--start of chat-box-->
-      </div>  <!--end of chat-box-->
-      <div class="form-group"> <!--Starting Of messagearea-->
-        <textarea class="form-control" rows="5" id="chat-text" placeholder="Enter Your Message.."></textarea>
-      </div> <!--end of messagearea-->
-      <input class="btn btn-primary submit" type="submit" value="Send"><br>
-      <br><p class="chat-status">Status :<span> Idle</span></p>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+    integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="/public/main.css">
+  <title>Imad Chat App</title>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <!--Starting Of container-->
+    <h1 class="display-4 lead">Node Chat</h1><br>
+    <!--heading-->
+    <div class="col-lg-6">
+      <!--Starting of name input-->
+      <div class="input-group">
+        <input type="text" class="form-control chat-name" placeholder="Enter your Name..">
+      </div>
+    </div><br>
+    <!--end of name input-->
+    <div class="chat-messages">
+      <!--start of chat-box-->
     </div>
+    <!--end of chat-box-->
+    <div class="form-group">
+      <!--Starting Of messagearea-->
+      <textarea class="form-control" rows="5" id="chat-text" placeholder="Enter Your Message.."></textarea>
+    </div>
+    <!--end of messagearea-->
+    <input class="btn btn-primary submit" type="submit" value="Send"><br>
+    <br>
+    <p class="chat-status">Status :<span> Idle</span></p>
 
-    <!-- jQuery first, then Tether, then Bootstrap JS. -->
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-    <script src="https://<yourUrl>/socket.io/socket.io.js"></script>
-    <script src="/public/main.js"></script>
-  </body>
+  </div>
+
+  <!-- jQuery first, then Tether, then Bootstrap JS. -->
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+    integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+    integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+    integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous">
+  </script>
+  <script src="https://<yourUrl>/socket.io/socket.io.js"></script>
+  <script src="/public/main.js"></script>
+</body>
+
 </html>
