@@ -23,6 +23,6 @@
     "mongodb": "^2.2.22",
     "morgan": "*",
     "path": "*",
-    "socket.io": "^1.7.2"
+    "socket.io": "^3.0.0"
   }
 }
